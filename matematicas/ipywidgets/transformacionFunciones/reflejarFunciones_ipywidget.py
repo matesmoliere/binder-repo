@@ -3,7 +3,7 @@ from ipywidgets import interact
 import matplotlib.pyplot as plt
 import numpy as np
 
-def funcion(a = 1):
+def funcion(a = -1):
     fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2,figsize=(18, 4))
     x = np.linspace(-10, 10, 200)
     y = np.linspace(-10, 10, 200)
@@ -17,4 +17,5 @@ def funcion(a = 1):
     ax2.axvline(linewidth=3, color = 'r')
     ax2.axhline(linewidth=2, color = 'r')
     ax2.plot(y, np.sqrt(a*x),linewidth=3)
-interact(funcion, a = (-1,1,1))
+#interact(funcion, a = (-1,1,1))
+interact(funcion, a = [-1,1])
