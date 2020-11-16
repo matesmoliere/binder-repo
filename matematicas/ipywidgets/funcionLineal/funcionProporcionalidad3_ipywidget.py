@@ -3,7 +3,7 @@ from ipywidgets import interact
 import matplotlib.pyplot as plt
 import numpy as np
 
-def parabola(m = 1, n = 0):
+def ecuacion(m = 1, n = 0):
     x = np.linspace(-10, 10, 200)
     y = np.linspace(-10, 10, 200)
     plt.axis([-10, 10, -10, 10])
@@ -12,4 +12,4 @@ def parabola(m = 1, n = 0):
     plt.axhline(linewidth=2, color = 'r')
     plt.plot(y, (m*x + n))
 
-interact(parabola, m = (-3, 3, 0.25), n = (-3, 3, 0.25))
+interact(ecuacion, m = (-3, 3, 0.25), n = (-3, 3, 0.25))
